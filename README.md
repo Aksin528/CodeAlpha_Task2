@@ -1,37 +1,40 @@
-CodeAlpha_Task2: Phishing Awareness Training App
+# Phishing Awareness Training
 
-This repository contains a Phishing Awareness Training web application. The project is designed to educate users on recognizing and avoiding common phishing attacks through an interactive, step-by-step training module. The application is built using HTML, CSS, and JavaScript.
+This repository contains a **single-page web application** for Phishing Awareness Training, developed as a submission for the **CodeAlpha internship program**. The project provides an **interactive, step-by-step module** to educate users on recognizing and avoiding common phishing attacks.
 
-Features
+## Features
 
-Step-by-Step Training: A seven-step educational module that guides users through different types of phishing attacks and provides real-world examples.
+- **Interactive Learning Module:** A seven-step training program covering key concepts of phishing, including common types of attacks and how to spot them.  
+- **Engaging Quiz:** A final quiz to test users' knowledge and reinforce key takeaways.  
+- **Dynamic Content:** The application progresses through different steps, revealing new content and interactive elements.  
+- **Responsive Design:** Fully responsive layout for seamless user experience on desktops, tablets, and mobile phones.
 
-Interactive Quiz: A final quiz to test the user's understanding of the concepts learned.
+## Technologies Used
 
-Responsive Design: The application is fully responsive and provides a seamless experience on both desktop and mobile devices.
+- **HTML5:** Core structure of the web page.  
+- **CSS3:** Styling, custom animations, and responsive layout.  
+- **JavaScript:** Step navigation, quiz logic, and interactive features.
 
-Technologies Used
+## Installation and Usage
 
-HTML5
+To get a copy of this project running on your local machine:
 
-CSS3
-
-JavaScript
-
-Installation and Usage
-
-To run this project locally, follow these simple steps:
-
-Clone the repository:
-
-git clone [https://github.com/YOUR-USERNAME/CodeAlpha_Task2.git](https://github.com/YOUR-USERNAME/CodeAlpha_Task2.git) 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/CodeAlpha_Task2.git
 
 Navigate to the project directory:
+```bash
+cd CodeAlpha_Task2
+```
+Open the application:
+Simply open index.html in your preferred web browser. No local server is required.
 
-cd CodeAlpha_Task2 
+## Live Demo
 
-Open the index.html file in your web browser.
+Check out the live demo of the application here:
+[ADD YOUR GITHUB PAGES LINK HERE]
 
-Contributions
+## Contribution
 
-Feel free to suggest improvements or contribute to this project. Your feedback is highly appreciated!
+Suggestions for improvements and new features are highly welcome. Feel free to open an issue or submit a pull request.
