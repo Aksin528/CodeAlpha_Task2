@@ -33,7 +33,7 @@ Simply open index.html in your preferred web browser. No local server is require
 ## Live Demo
 
 Check out the live demo of the application here:
-[ADD YOUR GITHUB PAGES LINK HERE]
+[https://aksin528.github.io/CodeAlpha_Task2/]
 
 ## Contribution
 
