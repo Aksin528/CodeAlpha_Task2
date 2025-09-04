@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="phishing_awareness.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+    <div class="container mx-4 sm:mx-auto">
+
+        <div class="flex justify-between items-center mb-8">
+            <span id="step-indicator" class="text-gray-500 font-medium text-sm">Step 1/7</span>
+            <div class="w-2/3 bg-gray-200 rounded-full h-2.5">
+                <div id="progress-bar" class="bg-indigo-600 h-2.5 rounded-full" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <div id="step-1" class="step-content active">
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/150x150/6366F1/ffffff?text=Training" alt="Training Icon" class="mb-6 rounded-full">
+                <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">Escape the Cyber-Anglers: Phishing Awareness Training 🎣</h1>
+                <p class="text-lg text-gray-600 mb-8 text-center">Welcome! Today, you will learn how to protect yourself against one of the most common threats in the digital world: <strong>phishing</strong> attacks. Your mission is to recognize the traps of cyber-anglers and protect our most valuable asset—data.</p>
+                <button id="next-1" class="next-main-step-btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105">Start</button>
+            </div>
+        </div>
+
+        <div id="step-2" class="step-content">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">What is Phishing and How is it Done?</h2>
+            <div class="flex flex-col items-center mb-6">
+                <img src="https://www.malwarebytes.com/wp-content/uploads/sites/2/2024/05/phishing.webp?w=1024" alt="Phishing Attack Diagram" class="mx-auto rounded-lg shadow-md mb-4 w-full h-auto max-w-lg">
+                <p class="text-sm text-gray-500 mt-2">Phishing attack diagram: How scammers cast their nets?</p>
+            </div>
+            <p class="text-lg text-gray-600 mb-6">Phishing is a type of cybercrime that uses fake emails or messages to steal your sensitive information (identity, passwords, credit card numbers, etc.). Just like a fisherman casting a line, cybercriminals 'bait' you to fall into their trap.</p>
+            <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4 text-center">Tactics Used by Attackers:</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li class="mx-auto">Creating fake websites and applications.</li>
+                <li class="mx-auto">Using <strong>domain spoofing</strong> to make messages look legitimate.</li>
+                <li class="mx-auto">Using <strong>Generative AI</strong> to create realistic and flawless messages.</li>
+                <li class="mx-auto">Manipulating links to make URLs appear correct.</li>
+                <li class="mx-auto">Sending emails from trusted infrastructures that can bypass spam filters.</li>
+                <li class="mx-auto">Using multiple channels such as SMS text messages, phone calls, and social media.</li>
+            </ul>
+            <button id="next-2" class="next-main-step-btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105 mx-auto block mt-8">Continue</button>
+        </div>
+
+        <div id="step-3" class="step-content">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Different Types of Phishing</h2>
+            <p class="text-lg text-gray-600 mb-8 text-center">Phishing attacks have different names based on their targets and methods. Here are the most common ones:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">1. Website Spoofing</h3>
+                    <p class="text-gray-600">An exact replica of a real website (e.g., a bank's site) is created. Users are redirected to this fake site, and all the information they enter is stolen by scammers.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">2. Account Deactivation</h3>
+                    <p class="text-gray-600">Panic is created by threatening that the user's account will be closed or disabled. In this panic, the user is asked to enter their login information.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">3. Advance-Fee Scam</h3>
+                    <p class="text-gray-600">Similar to the "Nigerian Prince" scam, a large gain is promised in exchange for a small advance payment. Once the payment is made, the promised money never arrives.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">4. Spear Phishing</h3>
+                    <p class="text-gray-600">A personalized and highly effective type of attack that targets a specific individual or company.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">5. Clone Phishing</h3>
+                    <p class="text-gray-600">Done by copying a previously sent legitimate email and making the link or file inside malicious.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">6. Whaling</h3>
+                    <p class="text-gray-600">Attacks that target high-profile individuals such as CEOs and senior executives, often involving demands for large money transfers.</p>
+                </div>
+            </div>
+            <button id="next-3" class="next-main-step-btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105 mx-auto block mt-8">Continue</button>
+        </div>
+        
+        <div id="step-4" class="step-content">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Tips to Recognize and Protect Against Phishing 🛡️</h2>
+            <div class="mb-6 flex flex-col items-center">
+                <img src="https://placehold.co/400x200/FCA5A5/ffffff?text=Fake+Website+Example" alt="Fake Website Example" class="mx-auto rounded-lg shadow-md mb-4">
+                <p class="text-sm text-gray-500 mt-2">Fake sites often look exactly like the real ones. Pay attention to the URL!</p>
+            </div>
+            <p class="text-lg text-gray-600 mb-6">No matter how advanced the methods used by cybercriminals are, you can protect yourself with a few simple tips:</p>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full mr-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a5.25 5.25 0 017.425 7.425L10.5 21l-4.5 1 1-4.5 10.9-10.9z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800">STOP and VERIFY</h3>
+                        <p class="text-gray-600">Be cautious of messages that create a sense of urgency. Before clicking on a link, verify the reliability of the source through official channels.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full mr-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800">Check the URL</h3>
+                        <p class="text-gray-600">When you visit a website, make sure the address bar starts with <strong>'HTTPS'</strong> and shows a <strong>lock icon</strong>. Also, check if the URL looks correct.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full mr-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800">Report Suspicious Activity</h3>
+                        <p class="text-gray-600">Immediately report any suspicious emails or messages you receive to your IT department or the relevant unit. This helps protect others as well.</p>
+                    </div>
+                </li>
+            </ul>
+            <button id="next-4" class="next-main-step-btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105 mx-auto block mt-8">Continue</button>
+        </div>
+
+        <div id="step-5" class="step-content">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Real-World Phishing Examples 🎣</h2>
+            <p class="text-lg text-gray-600 mb-8 text-center">Now that you know the tactics, here are a few examples of common phishing scams:</p>
+            <div class="space-y-8">
+                <div class="bg-red-50 p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Example 1: Bank Account Alert</h3>
+                    <p class="text-sm text-gray-500 mb-4">Sender: `support@bankofamerica.com.secure-update.net`</p>
+                    <p class="text-gray-600 italic">"Dear Customer, We have detected suspicious activity on your account. To prevent your account from being locked, please click the link below to verify your information immediately."</p>
+                    <div class="mt-4 p-4 bg-red-100 text-red-800 rounded-lg">
+                        <strong>Why is it phishing?</strong> The message creates a sense of urgency and uses a non-standard domain (`.net`). You should never click on the link; instead, go directly to your bank's official website.
+                    </div>
+                </div>
+                <div class="bg-yellow-50 p-6 rounded-xl shadow-sm border-l-4 border-yellow-500">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Example 2: Shipping Notification</h3>
+                    <p class="text-sm text-gray-500 mb-4">Sender: `fedex@tracking-info.co`</p>
+                    <p class="text-gray-600 italic">"Your package is being held due to an unpaid shipping fee. Please complete the payment for your shipment to be delivered. Your tracking number is: #472910."</p>
+                    <div class="mt-4 p-4 bg-yellow-100 text-yellow-800 rounded-lg">
+                        <strong>Why is it phishing?</strong> The sender's address is not the official courier company's domain (`.co`). Even if you are expecting a package, you should go to the official courier company's website and check your tracking number there.
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl shadow-sm border-l-4 border-blue-500">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Example 3: Social Media Password Reset</h3>
+                    <p class="text-sm text-gray-500 mb-4">Sender: `no-reply@instagram.com.reset-password.net`</p>
+                    <p class="text-gray-600 italic">"An unrecognized device has been detected logging into your account. To secure your account, please reset your password. Please renew your password via the link below."</p>
+                    <div class="mt-4 p-4 bg-blue-100 text-blue-800 rounded-lg">
+                        <strong>Why is it phishing?</strong> This email contains urgency and threat elements. Also, it uses a subdomain outside the official `instagram.com` domain.
+                    </div>
+                </div>
+            </div>
+            <button id="next-5" class="next-main-step-btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105 mx-auto block mt-8">Continue</button>
+        </div>
+
+        <div id="step-6" class="step-content">
+            <div id="quiz-container">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Test Your Knowledge 🧠</h2>
+                <div class="quiz-question-container">
+                    <p id="question-text" class="text-xl font-bold text-gray-800 mb-4 text-center">Question 1/7: What is the main goal of phishing?</p>
+                    <div id="question-image" class="text-center mb-6"></div>
+                    <div id="quiz-options" class="space-y-4"></div>
+                </div>
+            </div>
+            <div id="quiz-feedback" class="mt-4 text-center"></div>
+            <div class="text-center mt-8">
+                <button id="next-quiz-btn" class="hidden bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105">Next Question</button>
+            </div>
+        </div>
+
+        <div id="step-7" class="step-content">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Congratulations! 🎉</h2>
+            <div class="text-center mb-6">
+                <img src="https://placehold.co/150x150/10B981/ffffff?text=Success" alt="Success Icon" class="mx-auto rounded-full">
+            </div>
+            <p class="text-lg text-gray-600 mb-6 text-center">You have successfully completed the training! You are now more aware and prepared against phishing attacks. Remember, the best firewall is the human factor.</p>
+            <p id="final-score" class="text-2xl font-bold text-indigo-600 text-center">You answered <span id="score-display">0</span> questions correctly.</p>
+            <div class="text-center mt-8">
+                <button id="restart-button" class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-transform transform hover:scale-105">Restart Training</button>
+            </div>
+        </div>
+    </div>
+    <script src="phishing_awareness.js"></script>
+</body>
+</html>
